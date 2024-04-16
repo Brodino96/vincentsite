@@ -1,3 +1,5 @@
+/* css == !center(div) */
+
 body { /* background of the page, will fallback to black if image cannot be loaded */
     background: black url(/src/brodo_satoru.JPG);
     background-repeat: no-repeat;
@@ -8,17 +10,36 @@ body { /* background of the page, will fallback to black if image cannot be load
 }
 
 .title {
+    padding-top: 7%;
+
     color: white;
     text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
-    padding-left: 7%;
-    padding-right: 7%;
 }
 
 #title_head {
     font-size: clamp(32px, 10vw, 128px);
+    text-wrap: nowrap;
 }
 
 #title_description {
-    font-size: clamp(16px, 3vw, 64px);
+    font-size: clamp(8px, 2.5vw, 32px);
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+/* -------------------------------------------------------- */
+
+.buttons {
+    padding-top: 10%;
+}
+
+.column p {
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+.column img {
+    width: 20%;
 }

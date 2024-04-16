@@ -4,7 +4,7 @@ window.onload = function() { // function to change page title when you leave the
 
     document.addEventListener("visibilitychange", function(e) { // when you leave or open the page
         if(document.hidden){
-            document.title = "Torna qui 😢";
+            document.title = "Torna qui maledetto/a/e/u/i 😢";
         }else {
             document.title = pageTitle;
         }
