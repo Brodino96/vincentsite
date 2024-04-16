@@ -1,0 +1,25 @@
+body { /* background of the page, will fallback to black if image cannot be loaded */
+    background: black url(/page/src/brodo_satoru.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 60% 43%;
+}
+
+.title {
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: rgb(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+.title_head {
+    font-size: clamp(32px, 10vw, 64px);
+}
+
+.title_description {
+    font-size: clamp(14px, 4vw, 24px);
+    padding-left: 10%;
+    padding-right: 10%;
+}
