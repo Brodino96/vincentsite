@@ -1,45 +1,114 @@
-/* css == !center(div) */
+/* ------------------------------------------- */
 
-body { /* background of the page, will fallback to black if image cannot be loaded */
-    background: black url(/src/brodo_satoru.JPG);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 60% 43%;
-    
-    align-items: center;
+#sidebar_container {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    background-color: #c4c4c4;
+    position: fixed;
+    overflow: hidden;
 }
 
-.title {
-    padding-top: 7%;
+/* ------------------------------------------- */
 
-    color: white;
-    text-align: center;
-    font-family: Verdana, Tahoma, sans-serif;
+.text {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
-#title_head {
-    font-size: clamp(32px, 10vw, 128px);
-    text-wrap: nowrap;
+#photo {
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 50px;
 }
 
-#title_description {
-    font-size: clamp(8px, 2.5vw, 32px);
-    padding-left: 7%;
-    padding-right: 7%;
+/* ------------------------------------------- */
+
+#sidebar_buttons_container {
+  height: 100%;
+  width: 100%;
+  left: 100px;
 }
 
-/* -------------------------------------------------------- */
-
-.buttons {
-    padding-top: 10%;
+.sidebar_button,
+.sidebar_button *,
+.sidebar_button :after,
+.sidebar_button :before,
+.sidebar_button:after,
+.sidebar_button:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.sidebar_button {
+  -webkit-tap-highlight-color: 
+transparent;
+  -webkit-appearance: button;
+  background-color: 
+#000;
+  background-image: none;
+  color: 
+#fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.sidebar_button:disabled {
+  cursor: default;
+}
+.sidebar_button:-moz-focusring {
+  outline: auto;
+}
+.sidebar_button svg {
+  display: block;
+  vertical-align: middle;
+}
+.sidebar_button [hidden] {
+  display: none;
+}
+.sidebar_button {
+  --height: 80px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  -webkit-mask-image: none;
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.sidebar_button span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.sidebar_button:before {
+  background: 
+#fff;
+  border-radius: 20px;
+  content: "";
+  height: calc(var(--height) / 1.7);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: calc(var(--height) / 1.7);
+}
+.sidebar_button:hover:before {
+  left: 0;
+  width: 100%;
 }
 
-.column p {
-    color: white;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-size: 30px;
-}
-
-.column img {
-    width: 20%;
-}
+/* ------------------------------------------- */

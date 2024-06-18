@@ -3,58 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Vincent Acanfora</title>
     <link rel="icon" type="image/x-icon" href="/src/brodo.ico">
     <link rel="stylesheet" href="/css/index.css">
-    <script src="/js/main.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/index.js"></script>
 </head>
 
-
 <body>
-    <div class="title">
-        <h1 id="title_head">Vincent Acanfora</h1>
-        <p id="title_description">
-            Benvenuti, il mio nome è <strong>Vincent</strong> e 
-            questa è la mia pagina web, creata con lo scopo
-            principale di imparare i "linguaggi" <strong>html</strong>, 
-            <strong>css</strong> e <strong>javascript</strong>
-        </p>
-    </div>
-
-    <div class="buttons">
-
-        <div class="row">
-            <div class="column">
-                <img src="https://photo.elysiumcraft.it/immagini/screentest.png">
-                <p>Descrizione</p>
-            </div>
-            <div class="column">
-                <img src="https://photo.elysiumcraft.it/immagini/screentest.png">
-                <p>Descrizione</p>
-            </div>
-            <div class="column">
-                <img src="https://photo.elysiumcraft.it/immagini/screentest.png">
-                <p>Descrizione</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="column">
-                <img src="https://photo.elysiumcraft.it/immagini/screentest.png">
-                <p>Descrizione</p>
-            </div>
-            <div class="column">
-                <img src="https://photo.elysiumcraft.it/immagini/screentest.png">
-                <p>Descrizione</p>
-            </div>
-            <div class="column">
-                <img src="https://photo.elysiumcraft.it/immagini/screentest.png">
-                <p>Descrizione</p>
-            </div>
-        </div>
+    <div id="sidebar_container">
         
-    </div>
+        <div id="info_container">
+            <img id="photo" src="/src/brodo.ico">
+            <span class="text">Vincent Acanfora</span>
+            <span class="text">Fonico e ora anche programmatore</span>
+            <span class="text">Questa pagina è stata creata al solo scopo di imprare ad utilizzare html, css e javascript</span>
+        </div>
 
+        <div id="sidebar_buttons_container">
+            <button class="sidebar_button"><span>Non</span></button>
+            <button class="sidebar_button"><span>So</span></button>
+            <button class="sidebar_button"><span>Cosa</span></button>
+            <button class="sidebar_button"><span>Mettere</span></button>
+            <button class="sidebar_button"><span>In</span></button>
+            <button class="sidebar_button"><span>Questi</span></button>
+            <button class="sidebar_button"><span>Bottoni</span></button>
+        </div>
+    </div>
+    <div id="main_container"></div>
 </body>
 </html>
