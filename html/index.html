@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincent Acanfora</title>
-    <link rel="icon" type="image/x-icon" href="/src/brodo.ico">
+    <link rel="icon" type="image/x-icon" href="/data/brodo.ico">
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/utils.js"></script>
     <script src="/js/index.js"></script>
@@ -14,20 +14,22 @@
     <div id="sidebar_container">
         
         <div id="info_container">
-            <img id="photo" src="/src/brodo.ico">
-            <span class="text">Vincent Acanfora</span>
-            <span class="text">Fonico e ora anche programmatore</span>
-            <span class="text">Questa pagina è stata creata al solo scopo di imprare ad utilizzare html, css e javascript</span>
+            <img id="photo" src="/data/myself.jpg">
+            <span class="text" id="sidebar_name">Vincent Acanfora</span>
+            <span class="text" id="sidebar_desc1">Fonico e ora anche programmatore</span>
+            <span class="text" id="sidebar_desc2">Questa pagina è stata creata al solo scopo di imprare ad utilizzare html, css e javascript</span>
+            <div id="logo_container">
+                <img src="/data/github.svg" class="sidebar_logo" onclick="imageClicked('github')">
+                <img src="/data/instagram.svg" class="sidebar_logo" onclick="imageClicked('instagram')">
+            </div>
         </div>
 
         <div id="sidebar_buttons_container">
-            <button class="sidebar_button"><span>Non</span></button>
-            <button class="sidebar_button"><span>So</span></button>
-            <button class="sidebar_button"><span>Cosa</span></button>
-            <button class="sidebar_button"><span>Mettere</span></button>
-            <button class="sidebar_button"><span>In</span></button>
-            <button class="sidebar_button"><span>Questi</span></button>
-            <button class="sidebar_button"><span>Bottoni</span></button>
+            <button class="sidebar_button" onclick="changePage('photo')"><span>Fotografia</span></button>
+            <button class="sidebar_button"><span>qui</span></button>
+            <button class="sidebar_button"><span>cosa</span></button>
+            <button class="sidebar_button"><span>mettere</span></button>
+            <button class="sidebar_button"><span>qui</span></button>
         </div>
     </div>
     <div id="main_container"></div>
