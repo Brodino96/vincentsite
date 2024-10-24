@@ -1,12 +1,18 @@
-const pageTitle = document.title; // original title of the page
+/* ------------------------------------------------ */
 
-document.addEventListener("visibilitychange", function() { // when you leave or open the page
-    if (document.hidden) {
-        document.title = "Mi manchi, torna qui"
+let sidebarActive = false
+
+/* ------------------------------------------------ */
+
+function sidebar() {
+    if (sidebarActive) {
+        sidebarActive = !sidebarActive
+        return document.getElementById("sidebar").style.display = "block"
     } else {
-        document.title = pageTitle
+        sidebarActive = !sidebarActive
+        return document.getElementById("sidebar").style.display = "none"
     }
-})
+}
 
 function imageClicked (data) {
 
